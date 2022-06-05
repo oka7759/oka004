@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개페이지</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="자소개페이지" />
+    <meta property="og:title" content="정억화 자소페이지" />
+    <meta property="og:description" content="사전교육용 자기소개 페지 입니다." />
+    <meta property="og:image" content="#" />
+    <meta property="og:url" content="#" />
+
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="정억화 자소페이지" />
+    <meta property="twitter:title" content="자기소개페이지" />
+    <meta property="twitter:description" content="사전교육용 자기소개 페지 입니다." />
+    <meta property="twitter:image" content="#" />
+    <meta property="twitter:url" content="#" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script src="https://kit.fontawesome.com/7090c5b7dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    
+    <!--gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    <!--슬라이드-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <!--제이쿼리-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+
+   
+
+    <script defer src="./js/main.js"></script>
+
+
+</head>
+<body>
+    <div class="wrap">
+        <!--header-->
+        <header> 
+            <div class="inner">
+               <a href="#" class="logo">
+                   <p>introduction</p>
+                </a>
+            
+                <div class="sub-menu">
+                    <ul class="menu">
+                        <li>
+                            <a href="https://www.instagram.com/backsu100/" target="_blank">
+                                <i class="fa-brands fa-instagram-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/ukhwa.jung" target="_blank">
+                                <i class="fa-brands fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:eokhwa222@gmail.com" target="_blank">
+                                <i class="fa-solid fa-square-envelope"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+82-1046927759" target="_blank">
+                                <i class="fa-solid fa-square-phone"></i>
+                            </a>
+                        </li>            
+                        
+                    </ul>
+                </div>
+                <ul class="main-menu">
+                    <li  class="item">
+                        <div class="item__name"><a href="#01" data-target="#about" >About Me</a></div>
+                        
+                    </li>
+                   
+                    <li class="item">
+                        <div class="item__name"><a href="#03" data-target="#photo">Photo</a></div>
+                        
+                    </li>
+                    <li class="item">
+                        <div class="item__name"><a href="#04" data-target="#contact">Contact Me</a></div>
+                        
+                    </li>
+    
+                </ul>
+            </div>
+
+
+        </header>
+        <main>
+            <section class="wellcome">
+                <div class="inner">
+                    <div class="wellcome__message">
+                        <h1 class="fade-in">hello!!</h1>
+                        <p class="fade-in">Introduce me</p>
+                        <p class="fade-in">now</p>
+
+                    </div>
+                    
+                    
+
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="inner">
+
+                 
+                    
+                    <div id="animate" class="about__photo" >
+
+                        <img src="./images/photo.png" alt="">
+    
+    
+                    </div>
+               
+                    <div class="about__me">
+                        <p class="fade-in">안녕하세요</p>
+                        <p class="fade-in"><mark>프론트앤드</mark> 개발자를 꿈꾸는</p>
+                        <p class="fade-in">정억화입니다.</p>
+                    </div>
+                </div>
+                
+          
+            </section>
+          
+            <section class="photo" id="photo">
+                <div class="inner">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="./images/01.png" alt="01"></div>
+                          <div class="swiper-slide"><img src="./images/02.png" alt="01"></div>
+                          <div class="swiper-slide"><img src="./images/03.png" alt="01"></div>
+                 
+
+                        
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+
+            </section>
+            <section class="contact" id="contact">
+                <div class="inner">
+            
+                    <ul class="contact">
+                        <li>
+                            <a href="https://www.instagram.com/backsu100/" target="_blank">
+                                <i class="fa-brands fa-instagram-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/ukhwa.jung" target="_blank">
+                                <i class="fa-brands fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:eokhwa222@gmail.com" target="_blank">
+                                <i class="fa-solid fa-square-envelope"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+82-1046927759" target="_blank">
+                                <i class="fa-solid fa-square-phone"></i>
+                            </a>
+                        </li>            
+                        
+                    </ul>
+    
+                    <p> Thank you for visiting.</p>
+                </div>
+            </section>
+        </main>
+        
+       
+
+
+
+    </div>
+    
+</body>
+</html>

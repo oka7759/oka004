@@ -1,0 +1,340 @@
+
+/* COMMON */
+body {
+    
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to top,rgba(53,9,60,1), rgb(43, 53, 195), rgba(15,174,178,1));
+
+}
+img {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+.inner {
+    position: relative;
+    width:100%;
+    max-width: 1100px;
+    margin:  auto;
+    
+}
+main {margin-top: 120px;}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(15,174,178,1);
+    border-bottom: 1px solid rgb(122, 121, 121);
+    
+}
+header .inner {
+    
+    height: 120px;
+    max-width: none;
+    
+
+}
+header .logo {
+    transform: translateY(-50%);
+    position: absolute;
+    top:50%;
+    
+    margin:  auto;
+    color:#fff;
+    left: 5%;
+}
+header .logo p{
+    font-size: 40px;
+    font-weight: 800;
+    
+}
+header .inner .sub-menu{
+    position: absolute;
+    right: 10px;
+    top:10px;
+    
+
+}
+header .inner .sub-menu .menu{
+   display: flex;
+
+}
+header .inner .sub-menu .menu li {
+    margin-left: 20px;;
+    position: relative;
+}
+header .inner .sub-menu .menu li:first-child:before {
+    display: none;
+}
+
+header .inner .sub-menu .menu li::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 25px;
+    background-color: #e5e5e5;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: -10px;
+    margin: auto ;
+
+    
+}
+header .inner .sub-menu .menu li a{
+    background-color: white;
+   
+    font-size: 25px;
+    
+    
+    
+}
+header .inner .sub-menu .menu li a i {
+    display: block;
+    color:#fff;
+
+}
+
+header .inner .sub-menu .menu li a i:hover{
+    
+    color:rgba(0,0,0,0.4);
+
+}
+header .inner .main-menu{
+    color: #fff;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+header .inner .main-menu a {
+    color:#fff;
+}
+
+header .inner .main-menu .item {
+    
+}
+
+header .inner .main-menu .item {
+    
+    
+}
+header .inner .main-menu .item .item__name {
+    font-size: 20px;
+    padding:  10px 20px 20px 20px;
+    margin-left: 20px;
+    color:#fff;
+    font-weight: 300;
+}
+header .inner .main-menu .item:hover .item__name {
+    color:#333;
+    font-weight: 800;
+    cursor:pointer;
+    letter-spacing: -1px; 
+    
+}
+
+/* SECTION */
+section.wellcome {
+  
+    height: 700px;    
+}
+
+section.wellcome .inner {
+    padding-top: 150px;
+}
+
+section.wellcome .inner .wellcome__message {
+    
+    padding: 0px 0 0 150px;
+}
+section.wellcome .inner .wellcome__message .fade-in {
+    opacity: 0;
+}
+
+section.wellcome .inner .wellcome__message h1 {
+    font-size: 70px;
+    font-weight: 800;
+    color:#fff;
+    letter-spacing: 2.5px;
+    
+}
+section.wellcome .inner .wellcome__message p {
+    font-size: 70px;
+    font-weight: 800;
+    color:#fff;
+    letter-spacing: 2.5px;
+}
+
+
+/* ABOUT ME */
+section.about {
+
+  
+    height: 700px;    
+
+}
+section.about .inner
+{
+    padding-top: 150px;
+    height: 500px;
+}
+section.about .inner .fade-in
+{
+    opacity: 0;
+}
+
+section.about .inner .about__photo{ 
+    width: 400px;
+    height: 400px;
+    box-sizing: border-box;
+    border-radius: 400px;
+    overflow: hidden;
+    position: absolute;
+    left: -1000px;
+    box-shadow: 12px 12px 2px 1px blueviolet;
+    opacity: 0;
+   
+    
+}
+section.about .inner .about__photo img {
+    width: 100%;
+    height: 100%;
+
+}
+
+section.about .inner .about__me {
+    margin-left: 550px;
+    padding-top: 120px;
+ 
+} 
+section.about .inner .about__me p {
+    font-size: 40px;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 75px;
+
+}
+
+/* PHOTO */
+section.photo {
+    overflow: hidden;
+    height: 700px;    
+
+}
+section.photo .inner {
+    max-width: none;
+
+}
+
+
+
+
+/*슬라이드 시작*/
+.swiper {
+    width: 100%;
+    height: 700px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,15px))!important;
+    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,15px))!important;
+  }
+  /*슬라이드 끝*/
+
+
+
+  /*CONTACT ME*/
+
+  section.contact {
+
+ 
+    height: 320px;    
+}
+
+
+section.contact .inner {
+   
+   
+   
+    position: relative;
+    height: 100%;
+}
+
+section.contact .inner ul.contact {
+   display: flex;
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.contact .inner ul.contact li a i{
+
+    color: #fff;
+    font-size: 50px;
+}
+section.contact .inner ul.contact li a i:hover {
+
+    color: rgba(15,174,178,1);
+    transition: 0.5s;
+   
+}
+section.contact .inner ul.contact li  {
+
+    margin:30px;
+}
+section.contact .inner p {
+
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+
+
+
+
+
+
